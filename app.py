@@ -10,7 +10,7 @@ app = Flask(__name__)
 DB_HOST = "url-shortner-db.c63qmyk8488n.us-east-1.rds.amazonaws.com"
 DB_USER = "root"
 DB_PASSWORD = "12345678"
-DB_NAME = "url-shortner-db"
+DB_NAME = "url_shortener_db"
 
 def get_db():
     return MySQLdb.connect(
