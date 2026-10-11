@@ -8,7 +8,7 @@ on:
 
 jobs:
    demo-build-and-test:
-    runs-on: ubust
+    runs-on: ubuntu-latest
 
     steps:
     # Step 1: Pull down the source code from your repository

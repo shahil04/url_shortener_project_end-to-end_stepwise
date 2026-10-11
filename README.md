@@ -4,7 +4,7 @@
 ## Run with SQLite
 
 SQLite is included with Python, so no separate database server is needed. The app creates `url_shortener.db` and its `urls` table automatically the first time it starts.
-
+python 10
 1. Install dependencies:
 ```
 pip install -r requirements.txt
