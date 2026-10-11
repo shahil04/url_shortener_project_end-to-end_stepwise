@@ -19,20 +19,12 @@ Visit http://localhost:5000
 
 ## Run with MySQL
 
-1. Create a MySQL database and table:
-```sql
-CREATE DATABASE url_db;
-USE url_db;
-CREATE TABLE urls (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  short_code VARCHAR(10) UNIQUE,
-  long_url TEXT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  click_count INT DEFAULT 0
-);
-```
+1. Configure the MySQL connection details in `app.py`.
 
-2. Set the MySQL connection details in `app.py`.
+2. Create the database and table if they do not already exist:
+```
+python db_create.py
+```
 
 3. Install dependencies:
 ```
