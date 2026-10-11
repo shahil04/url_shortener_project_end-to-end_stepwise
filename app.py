@@ -63,5 +63,6 @@ def redirect_url(code):
     else:
         return "URL not found", 404
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    # Changing host to 0.0.0.0 makes it listen on all public IPs
+    app.run(host='0.0.0.0', port=5000)
